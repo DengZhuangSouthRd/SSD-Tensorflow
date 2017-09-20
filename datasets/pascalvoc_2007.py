@@ -51,6 +51,7 @@ TRAIN_STATISTICS = {
     'tvmonitor': (256, 324),
     'total': (5011, 12608),
 }
+
 TEST_STATISTICS = {
     'none': (0, 0),
     'aeroplane': (1, 1),
