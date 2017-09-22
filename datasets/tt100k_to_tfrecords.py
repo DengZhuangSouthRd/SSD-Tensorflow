@@ -79,8 +79,9 @@ def _process_image(directory, name):
     """
     # Read the image file.
     filename = directory + DIRECTORY_IMAGES + name + '.png'
+    print(filename)
     src_img = cv2.imread(filename)
-    shape = [src_img.height, src_img.width, src_img.shape[-1]]
+    shape = list(src_img.shape)
     image_data = tf.gfile.FastGFile(filename, 'rb').read()
 
     # Read the XML annotation file.
