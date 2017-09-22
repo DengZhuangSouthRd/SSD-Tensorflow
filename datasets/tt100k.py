@@ -53,6 +53,7 @@ TRAIN_STATISTICS = {
 }
 SPLITS_TO_SIZES = {
     'train': 3276,
+    'test': 1619
 }
 SPLITS_TO_STATISTICS = {
     'train': TRAIN_STATISTICS,

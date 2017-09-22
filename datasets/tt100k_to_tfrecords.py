@@ -80,7 +80,7 @@ def _process_image(directory, name):
     """
     # Read the image file.
     filename = directory + DIRECTORY_IMAGES + name + '.png'
-    print(filename)
+    # print(filename)
     src_img = cv2.imread(filename)
     shape = list(src_img.shape)
     image_data = tf.gfile.FastGFile(filename, 'rb').read()
@@ -228,4 +228,4 @@ def run(dataset_dir, output_dir, name='tt100k', shuffling=False):
     # Finally, write the labels file:
     # labels_to_class_names = dict(zip(range(len(_CLASS_NAMES)), _CLASS_NAMES))
     # dataset_utils.write_label_file(labels_to_class_names, dataset_dir)
-    print('\nFinished converting the Pascal VOC dataset!')
+    print('\nFinished converting the TT100k dataset!')
