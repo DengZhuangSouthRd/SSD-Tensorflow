@@ -53,7 +53,7 @@ def main(_):
 
     if FLAGS.dataset_name == 'pascalvoc':
         pascalvoc_to_tfrecords.run(FLAGS.dataset_dir, FLAGS.output_dir, FLAGS.output_name)
-    elif FLAGS.dataset_name == "jilin":
+    elif FLAGS.dataset_name == "tt100k":
         tt100k_to_tfrecords.run(FLAGS.dataset_dir, FLAGS.output_dir, FLAGS.output_name)
     else:
         raise ValueError('Dataset [%s] was not recognized.' % FLAGS.dataset_name)
