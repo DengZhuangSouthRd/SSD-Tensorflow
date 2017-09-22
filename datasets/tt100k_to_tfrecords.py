@@ -218,7 +218,7 @@ def run(dataset_dir, output_dir, name='tt100k', shuffling=False):
                 sys.stdout.flush()
 
                 filename = filenames[i]
-                img_name = filename[:-4]
+                img_name = filename[:-5]
                 _add_to_tfrecord(dataset_dir, img_name, tfrecord_writer)
                 i += 1
                 j += 1
