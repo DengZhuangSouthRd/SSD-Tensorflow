@@ -48,6 +48,7 @@ for each example.
 """
 import os
 import sys
+import json
 import random
 
 import cv2
