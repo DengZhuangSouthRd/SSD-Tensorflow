@@ -21,10 +21,12 @@ from __future__ import print_function
 
 from datasets import pascalvoc_2007
 from datasets import pascalvoc_2012
+from datasets import tt100k
 
 datasets_map = {
     'pascalvoc_2007': pascalvoc_2007,
     'pascalvoc_2012': pascalvoc_2012,
+    'tt100k': tt100k,
 }
 
 
